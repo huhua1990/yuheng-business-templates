@@ -1,8 +1,8 @@
 package com.yuheng.template.member.controller;
 
-import cn.iocoder.yudao.framework.common.pojo.CommonResult;
-import cn.iocoder.yudao.framework.common.pojo.PageResult;
-import cn.iocoder.yudao.framework.common.util.object.BeanUtils;
+import com.yuheng.platform.framework.common.pojo.CommonResult;
+import com.yuheng.platform.framework.common.pojo.PageResult;
+import com.yuheng.platform.framework.common.util.object.BeanUtils;
 import com.yuheng.template.member.dal.dataobject.MemberDO;
 import com.yuheng.template.member.service.MemberService;
 import com.yuheng.template.member.vo.MemberCreateReqVO;
@@ -18,7 +18,7 @@ import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
-import static cn.iocoder.yudao.framework.common.pojo.CommonResult.success;
+import static com.yuheng.platform.framework.common.pojo.CommonResult.success;
 
 /**
  * 管理后台 - 会员管理 API

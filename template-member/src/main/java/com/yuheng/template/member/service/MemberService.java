@@ -1,6 +1,6 @@
 package com.yuheng.template.member.service;
 
-import cn.iocoder.yudao.framework.common.pojo.PageResult;
+import com.yuheng.platform.framework.common.pojo.PageResult;
 import com.yuheng.template.member.dal.dataobject.MemberDO;
 import com.yuheng.template.member.vo.MemberCreateReqVO;
 import com.yuheng.template.member.vo.MemberPageReqVO;

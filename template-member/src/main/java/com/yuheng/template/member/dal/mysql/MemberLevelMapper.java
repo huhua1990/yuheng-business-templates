@@ -1,7 +1,7 @@
 package com.yuheng.template.member.dal.mysql;
 
-import cn.iocoder.yudao.framework.mybatis.core.mapper.BaseMapperX;
-import cn.iocoder.yudao.framework.mybatis.core.query.LambdaQueryWrapperX;
+import com.yuheng.platform.framework.mybatis.core.mapper.BaseMapperX;
+import com.yuheng.platform.framework.mybatis.core.query.LambdaQueryWrapperX;
 import com.yuheng.template.member.dal.dataobject.MemberLevelDO;
 import org.apache.ibatis.annotations.Mapper;
 

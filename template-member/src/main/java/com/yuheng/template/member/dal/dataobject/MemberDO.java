@@ -1,6 +1,6 @@
 package com.yuheng.template.member.dal.dataobject;
 
-import cn.iocoder.yudao.framework.mybatis.core.dataobject.BaseDO;
+import com.yuheng.platform.framework.mybatis.core.dataobject.BaseDO;
 import com.baomidou.mybatisplus.annotation.KeySequence;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
@@ -62,7 +62,7 @@ public class MemberDO extends BaseDO {
     /**
      * 状态
      *
-     * 枚举 {@link cn.iocoder.yudao.framework.common.enums.CommonStatusEnum}
+     * 枚举 {@link com.yuheng.platform.framework.common.enums.CommonStatusEnum}
      */
     private Integer status;
 

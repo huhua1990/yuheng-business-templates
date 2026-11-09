@@ -1,7 +1,7 @@
 package com.yuheng.template.member.service.impl;
 
-import cn.iocoder.yudao.framework.common.pojo.PageResult;
-import cn.iocoder.yudao.framework.common.util.object.BeanUtils;
+import com.yuheng.platform.framework.common.pojo.PageResult;
+import com.yuheng.platform.framework.common.util.object.BeanUtils;
 import com.yuheng.template.member.dal.dataobject.MemberDO;
 import com.yuheng.template.member.dal.mysql.MemberMapper;
 import com.yuheng.template.member.service.MemberService;
@@ -14,7 +14,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.validation.annotation.Validated;
 
-import static cn.iocoder.yudao.framework.common.exception.util.ServiceExceptionUtil.exception;
+import static com.yuheng.platform.framework.common.exception.util.ServiceExceptionUtil.exception;
 // import static com.yuheng.template.member.enums.ErrorCodeConstants.*;
 
 /**

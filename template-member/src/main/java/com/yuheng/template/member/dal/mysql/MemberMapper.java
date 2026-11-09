@@ -1,8 +1,8 @@
 package com.yuheng.template.member.dal.mysql;
 
-import cn.iocoder.yudao.framework.common.pojo.PageResult;
-import cn.iocoder.yudao.framework.mybatis.core.mapper.BaseMapperX;
-import cn.iocoder.yudao.framework.mybatis.core.query.LambdaQueryWrapperX;
+import com.yuheng.platform.framework.common.pojo.PageResult;
+import com.yuheng.platform.framework.mybatis.core.mapper.BaseMapperX;
+import com.yuheng.platform.framework.mybatis.core.query.LambdaQueryWrapperX;
 import com.yuheng.template.member.dal.dataobject.MemberDO;
 import com.yuheng.template.member.vo.MemberPageReqVO;
 import org.apache.ibatis.annotations.Mapper;
