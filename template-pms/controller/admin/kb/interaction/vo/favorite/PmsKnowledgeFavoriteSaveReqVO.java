@@ -1,0 +1,22 @@
+package com.yuheng.template.pms.controller.admin.kb.interaction.vo.favorite;
+
+import com.yuheng.platform.framework.common.validation.InEnum;
+import com.yuheng.template.pms.enums.kb.PmsKnowledgeObjectTypeEnum;
+import io.swagger.v3.oas.annotations.media.Schema;
+import jakarta.validation.constraints.NotNull;
+import lombok.Data;
+
+@Schema(description = "管理后台 - PMS 知识收藏（关注）保存 Request VO")
+@Data
+public class PmsKnowledgeFavoriteSaveReqVO {
+
+    @Schema(description = "对象类型", requiredMode = Schema.RequiredMode.REQUIRED, example = "3")
+    @NotNull(message = "对象类型不能为空")
+    @InEnum(value = PmsKnowledgeObjectTypeEnum.class, message = "对象类型必须是 {value}")
+    private Integer type;
+
+    @Schema(description = "对象编号", requiredMode = Schema.RequiredMode.REQUIRED, example = "1024")
+    @NotNull(message = "对象编号不能为空")
+    private Long entityId;
+
+}

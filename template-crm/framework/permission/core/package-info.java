@@ -1,0 +1,1 @@
+package com.yuheng.template.crm.framework.permission.core;

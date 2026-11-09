@@ -1,0 +1,28 @@
+package com.yuheng.template.pms.dal.mysql.pm.workitem;
+
+import com.yuheng.platform.framework.mybatis.core.mapper.BaseMapperX;
+import com.yuheng.platform.framework.mybatis.core.query.LambdaQueryWrapperX;
+import com.yuheng.template.pms.dal.dataobject.pm.workitem.PmsWorkItemMemberDO;
+import org.apache.ibatis.annotations.Mapper;
+
+import java.util.Collection;
+import java.util.List;
+
+@Mapper
+public interface PmsWorkItemMemberMapper extends BaseMapperX<PmsWorkItemMemberDO> {
+
+    default List<PmsWorkItemMemberDO> selectListByWorkItemIds(Collection<Long> workItemIds) {
+        return selectList(new LambdaQueryWrapperX<PmsWorkItemMemberDO>()
+                .in(PmsWorkItemMemberDO::getWorkItemId, workItemIds)
+                .orderByAsc(PmsWorkItemMemberDO::getId));
+    }
+
+    default void deleteByWorkItemId(Long workItemId) {
+        delete(PmsWorkItemMemberDO::getWorkItemId, workItemId);
+    }
+
+    default void deleteByProjectId(Long projectId) {
+        delete(PmsWorkItemMemberDO::getProjectId, projectId);
+    }
+
+}
